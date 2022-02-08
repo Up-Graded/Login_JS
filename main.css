@@ -1,7 +1,35 @@
 body{
-    background-color: #050505
+    background-color: #222222;
+}
+#login{
+  text-align: center;
+}
+#login_form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: #333333;
+    padding: 10px 50px 20px 50px;
+}
+div{
+  border-radius: 5px;
 }
 
-#login_form{
-    background-color: #222222
+input[type = text], input[type = password], input[type = submit]{
+  width: 100%;
+  padding: 5px 5px;
+  margin: 5px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+}
+input[type = submit]{
+  cursor:pointer;
+}
+
+#pass::-webkit-input-placeholder::before{
+  color: white;
 }
