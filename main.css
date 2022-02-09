@@ -2,6 +2,7 @@ body{
     background-color: #222222;
 }
 #login{
+    padding-bottom: 25px;
   text-align: center;
   color: #FFFFFF;
   font-size: 2rem;
@@ -42,9 +43,7 @@ input:focus::placeholder{
   color:transparent;
 }
 input[type = submit]{
-  position: relative;
-  left:0%;
-  top: 10%;
+    align-items: center;
   margin-top: 5px;
   width: 100%;
   height: 50%;
@@ -58,12 +57,10 @@ input[type = submit]{
 }
 input[type = submit]:hover{
   background-color: green;
-  border-color: rgb(0, 150, 0);
-  width: 105%;
-  height: 105%
+  transform: scale(1.01);
 }
-#usernameerror, #passerror{
-    font-size: 10px;
+#nameerror, #passerror{
+  font-size: 10px;
   color: red;
   font-family: 'Montserrat', sans-serif;
 }

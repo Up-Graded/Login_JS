@@ -6,9 +6,9 @@ const passerror = document.getElementById("passerror")
 
 submit.addEventListener("click", function(e){
     var errors = validate(username, password)
-    e.preventDefault()
     if (errors.pass == null && errors.name == null){
     } else{
+        console.log(errors)
         e.preventDefault()
         submit.style.borderColor = "#FF0000"
         if (errors.pass != null){
