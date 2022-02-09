@@ -8,16 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');</style>
 </head>
 <body>
     <div id = "login_form">
       <div id = "login">Login</div>
-      <form action = "/home.html" method = "post">
-        <input type = "text" id = "name" name = "password" placeholder = "Username">
-        <input type = "password" id = "pass" name = "password" placeholder = "Password">
-        <input type = "submit" value = "Submit">
-      </form>
+        <form action = "/home.html" method = "get">
+        <input type = "text" id = "name" name = "password" placeholder = "Username" autocomplete="off">
+        <div id = "nameerror"></div>
+        <input type = "password" id = "pass" name = "password" placeholder = "Password" autocomplete="off">
+        <div id = "passerror"></div>
+        <input type = "submit" value = "Submit" id = "submit">
+        </form>
     </div>
 </body>
 </html>
