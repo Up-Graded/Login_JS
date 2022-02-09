@@ -36,6 +36,6 @@ input[type = submit]{
   cursor:pointer;
 }
 
-#pass::-webkit-input-placeholder::before{
+#pass::placeholder, #name::placeholder{
   color: white;
 }
