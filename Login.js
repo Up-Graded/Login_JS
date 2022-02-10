@@ -2,7 +2,7 @@ const submit = document.getElementById("submit")
 const username = document.getElementById("name")
 const password = document.getElementById("pass")
 const loginerror = document.getElementById("loginerror")
-const users = $.getJSON("users.json", function(json){return json})
+const users = getJSON("users.json", function(json){return json})
 
 submit.addEventListener("click", function(e){
     var error = validate(username, password)
